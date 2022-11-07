@@ -11,9 +11,7 @@ CREATE TABLE `distributions` (
   KEY `rid_idx` (`rid`),
   CONSTRAINT `cid1` FOREIGN KEY (`cid`) REFERENCES `center` (`cid`),
   CONSTRAINT `rid1` FOREIGN KEY (`rid`) REFERENCES `receiver` (`rid`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
-LOCK TABLES `distributions` WRITE;
+)
 
 INSERT INTO `distributions` VALUES 
 (1,2,3,'shirt','2022-08-22',1,'L'),
@@ -21,5 +19,3 @@ INSERT INTO `distributions` VALUES
 (3,1,4,'jeans','2028-02-24',2,'XL'),
 (4,4,2,'blouse','2022-12-25',1,'M'),
 (5,5,2,'saree','2013-01-01',5,'F');
-
-UNLOCK TABLES;
