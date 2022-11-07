@@ -12,9 +12,7 @@ CREATE TABLE `donations` (
   KEY `cid_idx` (`cid`),
   CONSTRAINT `cid` FOREIGN KEY (`cid`) REFERENCES `center` (`cid`),
   CONSTRAINT `did` FOREIGN KEY (`did`) REFERENCES `donor` (`did`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
-LOCK TABLES `donations` WRITE;
+) 
 
 INSERT INTO `donations` VALUES 
 (1,2,8,2,'2022-05-22','shirt','L','M'),
@@ -24,5 +22,3 @@ INSERT INTO `donations` VALUES
 (5,3,5,2,'2012-12-12','saree','F','F'),
 (6,3,7,2,'2012-08-01','saree','L','F'),
 (7,3,10,3,'2012-08-01','blouse','L','F');
-
-UNLOCK TABLES;
