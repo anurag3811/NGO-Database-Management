@@ -1,10 +1,10 @@
 CREATE TABLE `receiver` (
-  `rid` int NOT NULL AUTO_INCREMENT,
-  `rname` varchar(45) NOT NULL,
-  `rage` int NOT NULL,
-  `sex` varchar(5) NOT NULL,
-  PRIMARY KEY (`rid`)
-)
+  `receiver_id` int NOT NULL AUTO_INCREMENT,
+  `receiver_name` varchar(45) NOT NULL,
+  `receiver_age` int NOT NULL,
+  `receiver_gender` varchar(5) NOT NULL,
+  PRIMARY KEY (`receiver_id`)
+);
 
 INSERT INTO `receiver` VALUES 
 (1,'sham',74,'m'),

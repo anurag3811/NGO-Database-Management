@@ -1,13 +1,14 @@
 CREATE TABLE `distributions` (
-  `lid` int AUTO_INCREMENT PRIMARY KEY,
-  `rid` int NOT NULL,
-  `cid` int NOT NULL,
-  `rtype` varchar(15) NOT NULL,
-  `ldate` date NOT NULL,
-  `qty` int NOT NULL,
-  `rsize` varchar(45) NOT NULL,
-  FOREIGN KEY (`cid`) REFERENCES `center` (`cid`),
-  FOREIGN KEY (`rid`) REFERENCES `receiver` (`rid`)
+  `distribution_id` int AUTO_INCREMENT PRIMARY KEY,
+  `donation_id` int NOT NULL,
+  `receiver_id` int NOT NULL,
+  `center_id` int NOT NULL,
+  `distribution_type` varchar(15) NOT NULL,
+  `distribution_date` date NOT NULL,
+  `receiver_size` varchar(45) NOT NULL,
+  FOREIGN KEY (`center_id`) REFERENCES `center` (`center_id`),
+  FOREIGN KEY (`receiver_id`) REFERENCES `receiver` (`receiver_id`),
+  FOREIGN KEY (`donation_id`) REFERENCES `donations` (`donation_id`)
 );
 
 INSERT INTO `distributions` VALUES 

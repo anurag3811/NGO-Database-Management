@@ -1,15 +1,14 @@
 CREATE TABLE `donations` (
-  `pid` int NOT NULL,
-  `did` int NOT NULL,
-  `quantity` int NOT NULL,
-  `cid` int NOT NULL,
-  `ddate` date NOT NULL,
-  `dtype` varchar(45) NOT NULL,
-  `dsize` varchar(45) NOT NULL,
-  `ddsex` varchar(45) NOT NULL,
-  PRIMARY KEY (`pid`),
-  FOREIGN KEY (`cid`) REFERENCES `center` (`cid`),
-  FOREIGN KEY (`did`) REFERENCES `donor` (`did`)
+  `donation_id` int NOT NULL AUTO_INCREMENT,
+  `donor_id` int NOT NULL,
+  `center_id` int NOT NULL,
+  `donation_date` date NOT NULL,
+  `donation_type` varchar(45) NOT NULL,
+  `donation_size` varchar(45) NOT NULL,
+  `donation_gender` varchar(45) NOT NULL,
+  PRIMARY KEY (`donation_id`),
+  FOREIGN KEY (`center_id`) REFERENCES `center` (`center_id`),
+  FOREIGN KEY (`donor_id`) REFERENCES `donor` (`donor_id`)
 );
 
 INSERT INTO `donations` VALUES 

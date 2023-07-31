@@ -1,10 +1,10 @@
 CREATE TABLE `donor` (
-  `did` int NOT NULL AUTO_INCREMENT,
-  `dname` varchar(45) NOT NULL,
-  `dsex` varchar(10) NOT NULL,
-  `dage` int NOT NULL,
-  PRIMARY KEY (`did`)
-) 
+  `donor_id` int NOT NULL AUTO_INCREMENT,
+  `donor_name` varchar(45) NOT NULL,
+  `donor_gender` varchar(10) NOT NULL,
+  `donor_age` int NOT NULL,
+  PRIMARY KEY (`donor_id`)
+);
 
 INSERT INTO `donor` VALUES 
 (1,'dhamankar','m',45),
