@@ -1,8 +1,4 @@
-CREATE 
-    ALGORITHM = UNDEFINED 
-    DEFINER = `root`@`localhost` 
-    SQL SECURITY DEFINER
-VIEW `sizes_type_sex` AS
+CREATE VIEW `sizes_type_sex` AS
     SELECT 
         `c`.`cid` AS `cid`,
         `c`.`cname` AS `cname`,

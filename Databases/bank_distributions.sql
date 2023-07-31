@@ -1,17 +1,14 @@
 CREATE TABLE `distributions` (
-  `lid` int NOT NULL AUTO_INCREMENT,
+  `lid` int AUTO_INCREMENT PRIMARY KEY,
   `rid` int NOT NULL,
   `cid` int NOT NULL,
   `rtype` varchar(15) NOT NULL,
   `ldate` date NOT NULL,
   `qty` int NOT NULL,
   `rsize` varchar(45) NOT NULL,
-  PRIMARY KEY (`lid`),
-  KEY `cid_idx` (`cid`),
-  KEY `rid_idx` (`rid`),
-  CONSTRAINT `cid1` FOREIGN KEY (`cid`) REFERENCES `center` (`cid`),
-  CONSTRAINT `rid1` FOREIGN KEY (`rid`) REFERENCES `receiver` (`rid`)
-)
+  FOREIGN KEY (`cid`) REFERENCES `center` (`cid`),
+  FOREIGN KEY (`rid`) REFERENCES `receiver` (`rid`)
+);
 
 INSERT INTO `distributions` VALUES 
 (1,2,3,'shirt','2022-08-22',1,'L'),
