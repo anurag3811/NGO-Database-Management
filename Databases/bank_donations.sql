@@ -8,11 +8,9 @@ CREATE TABLE `donations` (
   `dsize` varchar(45) NOT NULL,
   `ddsex` varchar(45) NOT NULL,
   PRIMARY KEY (`pid`),
-  KEY `did_idx` (`did`),
-  KEY `cid_idx` (`cid`),
-  CONSTRAINT `cid` FOREIGN KEY (`cid`) REFERENCES `center` (`cid`),
-  CONSTRAINT `did` FOREIGN KEY (`did`) REFERENCES `donor` (`did`)
-) 
+  FOREIGN KEY (`cid`) REFERENCES `center` (`cid`),
+  FOREIGN KEY (`did`) REFERENCES `donor` (`did`)
+);
 
 INSERT INTO `donations` VALUES 
 (1,2,8,2,'2022-05-22','shirt','L','M'),
