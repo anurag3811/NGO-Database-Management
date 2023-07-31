@@ -1,7 +1,7 @@
 CREATE VIEW `head_details` AS
-    SELECT 
-        `center`.`cname` AS `cname`,
-        `center`.`chead` AS `chead`,
-        `center`.`cphone` AS `cphone`
-    FROM
-        `center`
+SELECT 
+    `center_name` AS `cname`,
+    `center_head` AS `chead`,
+    `center_phone` AS `cphone`
+FROM
+    `center`;
