@@ -7,8 +7,13 @@ CREATE TABLE `receiver` (
 );
 
 INSERT INTO `receiver` VALUES 
-(1,'sham',74,'m'),
-(2,'anurag',12,'m'),
-(3,'pinal',20,'f'),
-(4,'bagulchor',50,'f'),
-(5,'Pande',35,'m');
+(1, 'Sham', 74, 'm'),
+(2, 'Anurag', 12, 'm'),
+(3, 'Pinal', 20, 'f'),
+(4, 'Bagulchor', 50, 'f'),
+(5, 'Pande', 35, 'm'),
+(6, 'John', 60, 'm'),
+(7, 'Emily', 18, 'f'),
+(8, 'Mike', 25, 'm'),
+(9, 'Sophia', 30, 'f'),
+(10, 'David', 40, 'm');

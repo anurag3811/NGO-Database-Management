@@ -8,7 +8,11 @@ CREATE TABLE `center` (
 );
 
 INSERT INTO `center` VALUES 
-(1,'Pimpri',12,'sakshi',12345),
-(2,'Katraj',8,'mahima',22345),
-(3,'Viman nagar',25,'alia',32345),
-(4,'Singhgad',15,'ananya',42345);
+(1, 'Pimpri', 12, 'Sakshi', 12345),
+(2, 'Katraj', 8, 'Mahima', 22345),
+(3, 'Viman Nagar', 25, 'Alia', 32345),
+(4, 'Singhgad', 15, 'Ananya', 42345),
+(5, 'Hadapsar', 20, 'Anita', 52345),
+(6, 'Kothrud', 15, 'Sujata', 62345),
+(7, 'Wakad', 10, 'Neha', 72345),
+(8, 'Aundh', 12, 'Rajesh', 82345);
